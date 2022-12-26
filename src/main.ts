@@ -12,11 +12,13 @@ if (require("electron-squirrel-startup")) {
 }
 
 let mainWindow: BrowserWindow | null;
+const windowWidth = 800;
+const windowHeight = 600;
 const createWindow = (): void => {
     // Create the browser window.
     mainWindow = new BrowserWindow({
-        height: 600,
-        width: 800,
+        height: windowHeight,
+        width: windowWidth,
         webPreferences: {
             preload: MAIN_WINDOW_PRELOAD_WEBPACK_ENTRY,
         },
@@ -66,13 +68,9 @@ const buildConnection = (): Connection => {
         .build();
     return connection;
 };
+
 let connection = buildConnection();
 
-// connection.send("greeting", "Mom from C#", (response: any) => {
-//     console.log(response);
-//     mainWindow.webContents.send("greeting", response);
-//     connection.close();
-// });
 setInterval(() => {
     try {
         connection.send("greeting", "Mom from C#", (err, response: any) => {
