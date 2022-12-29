@@ -1,0 +1,11 @@
+.background {
+    &-main {
+        @include theme-aware('background', 'system-background');
+    }
+    &-secondary {
+        @include theme-aware('background', 'system-background-secondary');
+    }
+    &-tertiary {
+        @include theme-aware('background', 'system-background-tertiary');
+    }
+}
