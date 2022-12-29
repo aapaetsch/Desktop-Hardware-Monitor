@@ -1,0 +1,15 @@
+
+
+.has {
+    &-text {
+        &-warning {
+            @include theme-aware('color', 'warning-color');
+        }
+        &-error {
+            @include theme-aware('color', 'error-color');
+        }
+        &-success {
+            @include theme-aware('color', 'success-color');
+        }
+    }
+}
