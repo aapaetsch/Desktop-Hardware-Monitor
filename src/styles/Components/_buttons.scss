@@ -9,3 +9,35 @@
 
 //     }
 // }
+
+.button {
+    &.has-icon {
+        
+    }
+}
+
+.icon-button {
+    &-wrapper {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        @include setIconButtonSize(24, 'small');
+        @include setIconButtonSize(32, 'medium');
+        @include setIconButtonSize(48, 'large');
+        &.is-circle {
+            border-radius: 50%;
+        }
+        &:hover {
+            cursor: pointer;
+            @include theme-aware('background-color', 'neutral-gray3');
+            &.is-settings {
+                & .icon-button {
+                    zoom: 1.2;
+                    @include theme-aware('color', 'label-secondary');
+                }
+            }    
+        }
+        
+    }
+    
+}

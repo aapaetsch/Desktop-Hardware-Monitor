@@ -1,0 +1,16 @@
+.has {
+    &-margin {
+        &-left {
+            &-auto {
+                margin-left: auto;
+            }
+        }
+        &-right {
+            @for $i from 1 through 10 {
+                &-#{$i * 5} {
+                    margin-right: $i * 5px;
+                }
+            }
+        }
+    }
+}

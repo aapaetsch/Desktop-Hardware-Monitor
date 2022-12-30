@@ -5,3 +5,17 @@
         }
     }
 }
+
+@mixin setIconButtonSize($size, $size-string) {
+    &.is-#{$size-string} {
+        width: #{$size}px;
+        height: #{$size}px;
+        .icon-button {
+            width: #{$size - 12}px;
+            height: #{$size - 12}px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+    }
+}

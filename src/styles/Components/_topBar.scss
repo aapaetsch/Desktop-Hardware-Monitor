@@ -1,0 +1,10 @@
+.topBar {
+    width: 100%;
+    height: 50px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    @include theme-aware('border-bottom-color', 'separator');
+    @include theme-aware('background-color', 'system-background-tertiary');
+    display: flex;
+    align-items: center;
+}

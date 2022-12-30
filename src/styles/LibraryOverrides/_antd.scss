@@ -1,0 +1,18 @@
+.ant-drawer {
+    &-close {
+        @include theme-aware('color', 'label-primary');
+        &:hover {
+            @include theme-aware('color', 'label-secondary');
+        }
+    }
+    &-title {
+        @include theme-aware('color', 'label-primary');
+    }
+    &-header {
+        @include theme-aware('border-bottom', 'separator');
+        border-bottom-style: solid !important;
+    }
+    &-mask {
+        @include theme-aware('background-color', 'system-background-tertiary');
+    }
+}
