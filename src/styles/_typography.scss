@@ -11,5 +11,11 @@
         &-success {
             @include theme-aware('color', 'success-color');
         }
+        &-default {
+            @include theme-aware('color', 'label-primary');
+            &.has-hover:hover {
+                @include theme-aware('color', 'label-secondary');
+            }
+        }
     }
 }

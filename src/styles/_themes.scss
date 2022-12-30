@@ -1,7 +1,7 @@
 $themes: (
     // Colors based off of the apple dark color cheat sheet
     // @see https://sarunw.com/posts/dark-color-cheat-sheet/
-    appleLight: (
+    apple-light: (
         // #region Apple Light Background
         system-background: #FFFFFFFF,
         system-background-secondary: #F2F2F7FF,
@@ -18,7 +18,7 @@ $themes: (
         placeholder-text: #3C3C434D,
         // #endregion Apple Light Label
         // #region Apple Light Separator
-        separator: #3CeC434A,
+        separator: #3C3C434A,
         opaque-separator: #C6C6C8FF,
         // #endregion Apple Light Separator
         // #region Apple Light Tint Colors
@@ -45,7 +45,7 @@ $themes: (
         neutral-gray6: #F2F2F7FF, // Secondary System Background
         // #endregion Apple Light Grays
     ),
-    appleDark: (
+    apple-dark: (
         // #region Apple Dark Background
         system-background: #000000FF,
         system-background-secondary: #1C1C1EFF,
