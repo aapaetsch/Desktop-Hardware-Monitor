@@ -1,0 +1,37 @@
+.horizontal {
+    &-track {
+        &-active {
+            display: block;
+            color: theme-aware("color", "system-blue");
+            height: 6px;
+            border-top-left-radius: 6px;
+            border-bottom-left-radius: 6px;
+        }
+        &-inactive {
+            display: block;
+            color: theme-aware("color", "neutral-gray3");
+            height: 3px;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+        }
+    }
+    &-stat {
+        &-indicator {
+            &-wrapper {
+            }
+        }
+        &-label {
+            &-units {
+                color: theme-aware("color", "label-secondary");
+            }
+            &-value {
+                color: theme-aware("color", "label-secondary");
+            }
+            &-left,
+            &-right {
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+    }
+}
