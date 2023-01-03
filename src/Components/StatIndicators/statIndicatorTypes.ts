@@ -19,3 +19,17 @@ export enum TemperatureUnits {
     Fahrenheit = "°F",
     Kelvin = "K",
 }
+
+export interface StatIndicatorLabelProps {
+    value: number | string;
+    units: MagnitudeUnits | FrequencyUnits | TemperatureUnits | null;
+    size?: Size;
+}
+
+export enum Size {
+    Tiny = "Tiny",
+    Small = "Small",
+    Regular = "Regular",
+    Medium = "Medium",
+    Large = "Large",
+}
