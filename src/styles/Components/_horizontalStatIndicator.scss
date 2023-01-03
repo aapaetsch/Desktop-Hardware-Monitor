@@ -2,30 +2,57 @@
     &-track {
         &-active {
             display: block;
-            color: theme-aware("color", "system-blue");
             height: 6px;
-            border-top-left-radius: 6px;
-            border-bottom-left-radius: 6px;
+            border-radius: 6px;
+            &.is-primary {
+                @include theme-aware("background-color", "theme-primary");
+            }
+            transition: 500ms linear width;
         }
         &-inactive {
             display: block;
-            color: theme-aware("color", "neutral-gray3");
-            height: 3px;
-            border-top-right-radius: 3px;
-            border-bottom-right-radius: 3px;
+            @include theme-aware("background-color", "neutral-gray3");
+            height: 6px;
+            margin-left: -1px;
+            border-top-right-radius: 6px;
+            border-bottom-right-radius: 6px;
+            padding-right: 1px;
+            transition: 500ms linear width;
         }
     }
     &-stat {
         &-indicator {
+            display: flex;
+            align-items: center;
             &-wrapper {
+                display: flex;
+                flex-direction: column;
             }
         }
         &-label {
+            text-align: center;
+            font-size: 12px;
+            &.is {
+                &-small {
+                    font-size: 10px !important;
+                }
+                &-medium {
+                    font-size: 14px !important;
+                }
+                &-large {
+                    font-size: 16px !important;
+                }
+            }
+            &-wrapper {
+                display: flex;
+                justify-content: space-between;
+            }
+
             &-units {
-                color: theme-aware("color", "label-secondary");
+                @include theme-aware("color", "label-secondary");
             }
             &-value {
-                color: theme-aware("color", "label-secondary");
+                @include theme-aware("color", "label-secondary");
             }
             &-left,
             &-right {
