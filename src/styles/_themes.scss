@@ -1,92 +1,118 @@
 $themes: (
     // Colors based off of the apple dark color cheat sheet
     // @see https://sarunw.com/posts/dark-color-cheat-sheet/
-    apple-light: (
-        // #region Apple Light Background
-        system-background: #FFFFFFFF,
-        system-background-secondary: #F2F2F7FF,
-        system-background-tertiary: #E5E5EAFF,
-        system-background-grouped: #FFFFFFFF,
-        system-background-grouped-secondary: #F2F2F7FF,
-        system-background-grouped-tertiary: #E5E5EAFF,
-        // #endregion Apple Light Background
-        // #region Apple Light Label
-        label-primary: #000000FF,
-        label-secondary: #3C3C4399,
-        label-tertiary: #3C3C434D,
-        label-quaternary: #3C3C432E,
-        placeholder-text: #3C3C434D,
-        // #endregion Apple Light Label
-        // #region Apple Light Separator
-        separator: #3C3C434A,
-        opaque-separator: #C6C6C8FF,
-        // #endregion Apple Light Separator
-        // #region Apple Light Tint Colors
-        system-blue: #007AFFFF,
-        system-green: #34C759FF,
-        system-indigo: #5856D6FF,
-        system-orange: #FF9500FF,
-        system-pink: #FF2D55FF,
-        system-red: #FF3B30FF,
-        system-teal: #5AC8FAFF,
-        system-yellow: #FFCC00FF,
-        // #endregion Apple Light Tint Colors
-        // #region Apple Light Communication Colors
-        warning-color: #FF9500FF, // System Orange
-        error-color: #FF3B30FF, // System Red
-        success-color: #34C759FF, // System Green
-        // #endregion Apple Light Communication Colors
-        // #region Apple Light Grays
-        neutral-gray: #8E8E93FF,
-        neutral-gray2: #AEAEB2FF,
-        neutral-gray3: #C7C7CCFF,
-        neutral-gray4: #D1D1D6FF,
-        neutral-gray5: #E5E5EAFF, // Tertiary System Background
-        neutral-gray6: #F2F2F7FF, // Secondary System Background
-        // #endregion Apple Light Grays
-    ),
+    apple-light:
+        (
+            // #region Apple Light Background
+            // #region Primary Colors
+            theme-primary-light-highlight: #52b1ff,
+            theme-primary-light: #2997ff,
+            theme-primary: #007aff,
+            theme-primary-dark: #0062d9,
+            theme-primary-dark-hightlight: #004ab3,
+            // #endregion Primary Colors
+            system-background: #ffffffff,
+            system-background-secondary: #f2f2f7ff,
+            system-background-tertiary: #e5e5eaff,
+            system-background-grouped: #ffffffff,
+            system-background-grouped-secondary: #f2f2f7ff,
+            system-background-grouped-tertiary: #e5e5eaff,
+            // #endregion Apple Light Background
+            // #region Apple Light Label
+            label-primary: #000000ff,
+            label-secondary: #3c3c4399,
+            label-tertiary: #3c3c434d,
+            label-quaternary: #3c3c432e,
+            placeholder-text: #3c3c434d,
+            // #endregion Apple Light Label
+            // #region Apple Light Separator
+            separator: #3c3c434a,
+            opaque-separator: #c6c6c8ff,
+            // #endregion Apple Light Separator
+            // #region Apple Light Tint Colors
+            system-blue: #007affff,
+            system-green: #34c759ff,
+            system-indigo: #5856d6ff,
+            system-orange: #ff9500ff,
+            system-pink: #ff2d55ff,
+            system-red: #ff3b30ff,
+            system-teal: #5ac8faff,
+            system-yellow: #ffcc00ff,
+            // #endregion Apple Light Tint Colors
+            // #region Apple Light Communication Colors
+            warning-color: #ff9500ff,
+            // System Orange
+            error-color: #ff3b30ff,
+            // System Red
+            success-color: #34c759ff,
+            // System Green
+            // #endregion Apple Light Communication Colors
+            // #region Apple Light Grays
+            neutral-gray: #8e8e93ff,
+            neutral-gray2: #aeaeb2ff,
+            neutral-gray3: #c7c7ccff,
+            neutral-gray4: #d1d1d6ff,
+            neutral-gray5: #e5e5eaff,
+            // Tertiary System Background
+            neutral-gray6: #f2f2f7ff,
+            // Secondary System Background
+            // #endregion Apple Light Grays
+        ),
     apple-dark: (
+        // #region Primary Colors
+        // dark and light mean the reverse for dark themes.
+        theme-primary-light-highlight: #004db3,
+        theme-primary-light: #0065d9,
+        // System-blue
+        theme-primary: #0a84ffff,
+        theme-primary-dark: #33a0ff,
+        theme-primary-dark-highlight: #5cb8ff,
         // #region Apple Dark Background
-        system-background: #000000FF,
-        system-background-secondary: #1C1C1EFF,
-        system-background-tertiary: #2C2C2EFF,
-        system-background-grouped: #000000FF,
-        system-background-grouped-secondary: #1C1C1EFF,
-        system-background-grouped-tertiary: #2C2C2EFF,
+        system-background: #000000ff,
+        system-background-secondary: #1c1c1eff,
+        system-background-tertiary: #2c2c2eff,
+        system-background-grouped: #000000ff,
+        system-background-grouped-secondary: #1c1c1eff,
+        system-background-grouped-tertiary: #2c2c2eff,
         // #endregion Apple Dark Background
         // #region Apple Dark Label
-        label-primary: #FFFFFFFF,
-        label-secondary: #EBEBF599,
-        label-tertiary: #EBEBF54D,
-        label-quaternary: #EBEBF52E,
-        placeholder-text: #EBEBF54D,
+        label-primary: #ffffffff,
+        label-secondary: #ebebf599,
+        label-tertiary: #ebebf54d,
+        label-quaternary: #ebebf52e,
+        placeholder-text: #ebebf54d,
         // #endregion Apple Dark Label
         // #region Apple Dark Separator
         separator: #54545899,
-        opaque-separator: #38383AFF,
+        opaque-separator: #38383aff,
         // #endregion Apple Dark Separator
         // #region Apple Dark Tint Colors
-        system-blue: #0A84FFFF,
-        system-green: #30D158FF,
-        system-indigo: #5E5CE6FF,
-        system-orange: #FF9F0AFF,
-        system-pink: #BF5AF2FF,
-        system-red: #FF453AFF,
-        system-teal: #64D2FFFF,
-        system-yellow: #FFD60AFF,
+        system-blue: #0a84ffff,
+        system-green: #30d158ff,
+        system-indigo: #5e5ce6ff,
+        system-orange: #ff9f0aff,
+        system-pink: #bf5af2ff,
+        system-red: #ff453aff,
+        system-teal: #64d2ffff,
+        system-yellow: #ffd60aff,
         // #endregion Apple Dark Tint Colors
         // #region Apple Dark Communication Colors
-        warning-color: #FF9F0AFF, // System Orange
-        error-color: #FF453AFF, // System Red
-        success-color: #30D158FF, // System Green
+        warning-color: #ff9f0aff,
+        // System Orange
+        error-color: #ff453aff,
+        // System Red
+        success-color: #30d158ff,
+        // System Green
         // #endregion Apple Dark Communication Colors
         // #region Apple Dark Grays
-        neutral-gray: #8E8E93FF,
-        neutral-gray2: #636366FF,
-        neutral-gray3: #48484AFF,
-        neutral-gray4: #3A3A3CFF,
-        neutral-gray5: #2C2C2EFF,  // Tertiary System Background
-        neutral-gray6: #1C1C1EFF, // Secondary System Background
+        neutral-gray: #8e8e93ff,
+        neutral-gray2: #636366ff,
+        neutral-gray3: #48484aff,
+        neutral-gray4: #3a3a3cff,
+        neutral-gray5: #2c2c2eff,
+        // Tertiary System Background
+        neutral-gray6: #1c1c1eff,
+        // Secondary System Background
         // #endregion Apple Dark Grays
     )
 );
