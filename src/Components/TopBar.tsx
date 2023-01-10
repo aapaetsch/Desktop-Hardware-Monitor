@@ -1,11 +1,12 @@
-import React from 'react';
-import Settings from './Settings';
-
+import React from "react";
+import SettingsDrawer from "./SettingsDrawer";
 
 function TopBar() {
-    return <div className="topBar">
-        <Settings />
-    </div>;
+    return (
+        <div className="topBar">
+            <SettingsDrawer />
+        </div>
+    );
 }
 
 export default TopBar;
