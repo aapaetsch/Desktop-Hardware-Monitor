@@ -14,3 +14,11 @@
         }
     }
 }
+
+.is-flex {
+    display: flex;
+    &-column {
+        flex-direction: column;
+        display: flex;
+    }
+}

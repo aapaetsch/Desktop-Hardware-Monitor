@@ -1,0 +1,54 @@
+.toggle-switch {
+    &:not(.ant-switch-checked) {
+        @include theme-aware("background-color", "neutral-gray3");
+    }
+
+    @include theme-aware("border-color", "neutral-gray");
+    &:hover {
+        @include theme-aware("background-color", "neutral-gray");
+    }
+    &.ant-switch-checked {
+        @include theme-aware("background-color", "theme-primary");
+        &:hover {
+            @include theme-aware("background-color", "theme-primary-highlight");
+        }
+    }
+    &-wrapper {
+        margin-top: 10px;
+        &:hover {
+            & label {
+                @include theme-aware("color", "label-tertiary");
+                cursor: pointer;
+            }
+            & button {
+                @include theme-aware("background-color", "neutral-gray5");
+                cursor: pointer;
+            }
+        }
+    }
+    &-label {
+        @include theme-aware("color", "label-primary");
+        font-size: 14px;
+        font-weight: 400;
+        // &:hover {
+        //     cursor: pointer;
+        //     @include theme-aware("color", "label-tertiary");
+        // }
+        // &.is-hover {
+        //     @include theme-aware("color", "label-tertiary");
+        //     cursor: pointer;
+        // }
+        &.is-left {
+            margin-left: 0;
+            margin-right: 10px;
+        }
+        &.is-right {
+            margin-left: 10px;
+            margin-right: 0;
+        }
+    }
+    // &.is-hover {
+    //     cursor: pointer;
+    //     @include theme-aware("background-color", "neutral-gray4");
+    // }
+}

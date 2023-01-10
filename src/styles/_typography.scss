@@ -1,20 +1,47 @@
-
-
 .has {
     &-text {
         &-warning {
-            @include theme-aware('color', 'warning-color');
+            @include theme-aware("color", "warning-color");
         }
         &-error {
-            @include theme-aware('color', 'error-color');
+            @include theme-aware("color", "error-color");
         }
         &-success {
-            @include theme-aware('color', 'success-color');
+            @include theme-aware("color", "success-color");
         }
         &-default {
-            @include theme-aware('color', 'label-primary');
+            @include theme-aware("color", "label-primary");
             &.has-hover:hover {
-                @include theme-aware('color', 'label-secondary');
+                @include theme-aware("color", "label-secondary");
+            }
+        }
+        &-weight {
+            &-bold {
+                font-weight: 700;
+            }
+            &-normal {
+                font-weight: 400;
+            }
+            &-light {
+                font-weight: 300;
+            }
+        }
+
+        &-size {
+            &-tiny {
+                font-size: 12px;
+            }
+            &-small {
+                font-size: 14px;
+            }
+            &-normal {
+                font-size: 16px;
+            }
+            &-medium {
+                font-size: 18px;
+            }
+            &-large {
+                font-size: 20px;
             }
         }
     }

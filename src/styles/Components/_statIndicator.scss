@@ -1,0 +1,119 @@
+.circular {
+    &-stat {
+        &-indicator {
+            &-wrapper {
+            }
+            &-svg {
+                // @include theme-aware("fill", "system-background");
+                fill: transparent;
+                &-active {
+                    @include theme-aware("stroke", "theme-primary");
+                    stroke-linecap: round;
+                    stroke-width: $statIndicatorStrokeWidth;
+                }
+                &-passive {
+                    @include theme-aware("stroke", "neutral-gray3");
+                    stroke-linecap: round;
+                    stroke-width: $statIndicatorStrokeWidth;
+                }
+                &.is-top {
+                    rotate: -90deg;
+                }
+                &.is-bottom {
+                    rotate: 90deg;
+                }
+                &.is-left {
+                    rotate: 180deg;
+                }
+                &.is-right {
+                    rotate: 0deg;
+                }
+            }
+        }
+        &-label-wrapper {
+            position: fixed;
+            // left: 50%;
+            // top: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &-value {
+            &-wrapper {
+                position: absolute;
+
+                // left: 50%;
+                // top: 50%;
+                // &.is-small {
+                //     left: 50%;
+                //     top: calc(50% - 7px);
+                // }
+            }
+        }
+    }
+}
+
+.horizontal {
+    &-track {
+        &-active {
+            display: block;
+            height: 6px;
+            border-radius: 6px;
+            &.is-primary {
+                @include theme-aware("background-color", "theme-primary");
+            }
+            transition: 500ms linear width;
+        }
+        &-inactive {
+            display: block;
+            @include theme-aware("background-color", "neutral-gray3");
+            height: 6px;
+            margin-left: -1px;
+            border-top-right-radius: 6px;
+            border-bottom-right-radius: 6px;
+            padding-right: 1px;
+            transition: 500ms linear width;
+        }
+    }
+    &-stat {
+        &-indicator {
+            display: flex;
+            align-items: center;
+            &-wrapper {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        &-label {
+            text-align: center;
+            font-size: 12px;
+            &.is {
+                &-small {
+                    font-size: 10px !important;
+                }
+                &-medium {
+                    font-size: 14px !important;
+                }
+                &-large {
+                    font-size: 16px !important;
+                }
+            }
+            &-wrapper {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            &-units {
+                @include theme-aware("color", "label-secondary");
+            }
+            &-value {
+                @include theme-aware("color", "label-secondary");
+            }
+            &-left,
+            &-right {
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+    }
+}

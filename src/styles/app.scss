@@ -1,20 +1,21 @@
-@import './themes.scss';
-@import './mixins.scss';
-@import './variables.scss';
-@import './keyframes.scss';
-@import './elements.scss';
-@import './typography.scss';
-@import './modifiers.scss';
+@import "./themes.scss";
+@import "./mixins.scss";
+@import "./variables.scss";
+@import "./keyframes.scss";
+@import "./elements.scss";
+@import "./typography.scss";
+@import "./modifiers.scss";
 // #region Pages
-@import './Pages/backgrounds.scss';
+@import "./Pages/backgrounds.scss";
 // #endregion Pages
 // #region Components
-@import './Components/horizontalStatIndicator.scss';
-@import './Components/topBar.scss';
-@import './Components/buttons.scss';
+@import "./Components/statIndicator.scss";
+@import "./Components/topBar.scss";
+@import "./Components/buttons.scss";
+@import "./Components/toggleSwitch.scss";
 // #endregion Components
 // #region Library Overrides
-@import './LibraryOverrides/antd.scss';
+@import "./LibraryOverrides/antd.scss";
 // #endregion Library Overrides
 #app {
     height: 100%;
