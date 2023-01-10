@@ -17,6 +17,7 @@ $themes: (
             system-background-grouped: #ffffffff,
             system-background-grouped-secondary: #f2f2f7ff,
             system-background-grouped-tertiary: #e5e5eaff,
+            system-mask: rgba(0, 0, 0, 0.5),
             // #endregion Apple Light Background
             // #region Apple Light Label
             label-primary: #000000ff,
@@ -74,6 +75,7 @@ $themes: (
         system-background-grouped: #000000ff,
         system-background-grouped-secondary: #1c1c1eff,
         system-background-grouped-tertiary: #2c2c2eff,
+        system-mask: rgba(255, 255, 255, 0.4),
         // #endregion Apple Dark Background
         // #region Apple Dark Label
         label-primary: #ffffffff,
